@@ -1,0 +1,16 @@
+<div id="container" *ngFor="let direction of paths">
+
+    <div id="source-container" >
+        <img id="metro-icon" src="../../assets/lignes/{{direction.ligne}}.png" alt="">
+        <div id="line"></div>
+    </div>
+
+    <div id="dest-container">
+        <span>{{direction.source}}</span>
+
+        <span id="direction"> Direction : {{direction.direction}}</span>
+
+        <span id="destination">{{direction.destination}}</span>
+    </div>
+
+</div>
